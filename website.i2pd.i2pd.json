@@ -43,8 +43,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.openssl.org/source/openssl-1.1.1a.tar.gz",
-                    "sha256": "fc20130f8b7cbd2fb918b2f14e2f429e109c31ddd0fb38fc5d71d9ffed3f9f41"
+                    "url": "https://www.openssl.org/source/openssl-1.1.1b.tar.gz",
+                    "sha256": "5c557b023230413dfb0756f3137a13e6d726838ccd1430888ad15bfb2b43ea4b"
                 }
             ]
         },
@@ -70,8 +70,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/PurpleI2P/i2pd/archive/2.23.0.zip",
-                    "sha256": "0a1fb42740339b42c3c64b0cec3f533b6c192f7e414332b386ce4e9e8419a9ee"
+                    "url": "https://github.com/PurpleI2P/i2pd/archive/2.24.0.zip",
+                    "sha256": "3ce1062887e88fd851c27ac4e256d4f3f06fc95329d6c979cd67449076ce8c94"
                 },
                 {
                     "type": "patch",
