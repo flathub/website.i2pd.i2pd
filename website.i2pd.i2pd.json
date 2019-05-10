@@ -71,7 +71,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/PurpleI2P/i2pd/archive/2.25.0.zip",
-                    "sha256": "80486b51abbf082ca427c95a298f037a28504eb3c6c788a700273de34ae1bd6b"
+                    "sha256": "3dc1d5424ee960e8e340853e8591df29254bc36a4832f7b7ea143d4f8094c6fd"
                 },
                 {
                     "type": "patch",
