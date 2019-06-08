@@ -1,5 +1,5 @@
 diff --git a/qt/i2pd_qt/i2pd_qt.pro b/qt/i2pd_qt/i2pd_qt.pro
-index e24a3963..46dd4a1b 100644
+index e24a3963..9a978731 100644
 --- a/qt/i2pd_qt/i2pd_qt.pro
 +++ b/qt/i2pd_qt/i2pd_qt.pro
 @@ -4,19 +4,22 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -47,7 +47,7 @@ index e24a3963..46dd4a1b 100644
      ../../libi2pd_client/AddressBook.cpp \
      ../../libi2pd_client/BOB.cpp \
      ../../libi2pd_client/ClientContext.cpp \
-@@ -64,24 +66,23 @@ SOURCES += DaemonQT.cpp mainwindow.cpp \
+@@ -64,42 +66,37 @@ SOURCES += DaemonQT.cpp mainwindow.cpp \
      ../../libi2pd_client/SOCKS.cpp \
      ../../libi2pd_client/Websocket.cpp \
      ../../libi2pd_client/WebSocks.cpp \
@@ -55,7 +55,6 @@ index e24a3963..46dd4a1b 100644
 +    ../../daemon/HTTPServer.cpp \
 +    ../../daemon/I2PControl.cpp \
 +    ../../daemon/i2pd.cpp \
-+    ../../daemon/UnixDaemon.cpp \
 +    ../../daemon/UPnP.cpp \
      ClientTunnelPane.cpp \
      MainWindowItems.cpp \
@@ -73,17 +72,17 @@ index e24a3963..46dd4a1b 100644
      pagewithbackbutton.cpp \
      widgetlock.cpp \
      widgetlockregistry.cpp \
-     logviewermanager.cpp \
+-    logviewermanager.cpp \
 -    ../../libi2pd/NTCP2.cpp
- 
- #qt creator does not handle this well
- #SOURCES += $$files(../../libi2pd/*.cpp)
-@@ -89,17 +90,22 @@ SOURCES += DaemonQT.cpp mainwindow.cpp \
- #SOURCES += $$files(../../daemon/*.cpp)
- #SOURCES += $$files(./*.cpp)
- 
+-
+-#qt creator does not handle this well
+-#SOURCES += $$files(../../libi2pd/*.cpp)
+-#SOURCES += $$files(../../libi2pd_client/*.cpp)
+-#SOURCES += $$files(../../daemon/*.cpp)
+-#SOURCES += $$files(./*.cpp)
+-
 -SOURCES -= ../../daemon/UnixDaemon.cpp
-+#SOURCES -= ../../daemon/UnixDaemon.cpp
++    logviewermanager.cpp
  
  HEADERS  += DaemonQT.h mainwindow.h \
      ../../libi2pd/api.h \
@@ -103,7 +102,7 @@ index e24a3963..46dd4a1b 100644
      ../../libi2pd/Event.h \
      ../../libi2pd/Family.h \
      ../../libi2pd/FS.h \
-@@ -115,13 +121,16 @@ HEADERS  += DaemonQT.h mainwindow.h \
+@@ -115,13 +112,16 @@ HEADERS  += DaemonQT.h mainwindow.h \
      ../../libi2pd/Log.h \
      ../../libi2pd/NetDb.hpp \
      ../../libi2pd/NetDbRequests.h \
@@ -120,7 +119,7 @@ index e24a3963..46dd4a1b 100644
      ../../libi2pd/SSU.h \
      ../../libi2pd/SSUData.h \
      ../../libi2pd/SSUSession.h \
-@@ -151,6 +160,10 @@ HEADERS  += DaemonQT.h mainwindow.h \
+@@ -151,6 +151,10 @@ HEADERS  += DaemonQT.h mainwindow.h \
      ../../libi2pd_client/SOCKS.h \
      ../../libi2pd_client/Websocket.h \
      ../../libi2pd_client/WebSocks.h \
@@ -131,7 +130,7 @@ index e24a3963..46dd4a1b 100644
      ClientTunnelPane.h \
      MainWindowItems.h \
      ServerTunnelPane.h \
-@@ -158,16 +171,11 @@ HEADERS  += DaemonQT.h mainwindow.h \
+@@ -158,16 +162,11 @@ HEADERS  += DaemonQT.h mainwindow.h \
      TunnelConfig.h \
      TunnelPane.h \
      TunnelsPageUpdateListener.h \
