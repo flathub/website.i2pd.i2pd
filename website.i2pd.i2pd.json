@@ -70,16 +70,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/PurpleI2P/i2pd/archive/2.26.0.zip",
-                    "sha256": "69fcf9a3c15d7ee9a15606e57f1f01838d6f6040f988549e3645f771bb348d30"
+                    "url": "https://github.com/PurpleI2P/i2pd/archive/2.27.0.zip",
+                    "sha256": "5eb836afc28c6cbe70f25f2c297f9968a903ef2df79abc2b113080b1c0d58ae7"
                 },
                 {
                     "type": "patch",
                     "path": "i2pd-ldlibs.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "i2pd-qtproj.patch"
                 },
                 {
                     "type": "file",
