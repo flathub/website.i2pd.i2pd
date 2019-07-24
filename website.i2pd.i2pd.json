@@ -13,7 +13,7 @@
     ],
     "cleanup": [
         "/cache",
-        "/share/doc", "/share/man", "/bin/openssl", "/bin/upnpc", "/bin/c_rehash", "/bin/external-ip",
+        "/share/doc", "/share/man", "/bin/upnpc", "/bin/external-ip",
         "*.la", "*.a"
     ],
     "modules": [
@@ -29,22 +29,6 @@
                     "type": "archive",
                     "url": "https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2",
                     "sha256": "7f6130bc3cf65f56a618888ce9d5ea704fa10b462be126ad053e80e553d6d8b7"
-                }
-            ]
-        },
-        {
-            "name": "openssl",
-            "buildsystem": "simple",
-            "build-commands": [
-                "./config --prefix=/app --openssldir=/app/ssl shared zlib",
-                "make -j $FLATPAK_BUILDER_N_JOBS",
-                "make install"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://www.openssl.org/source/openssl-1.1.1b.tar.gz",
-                    "sha256": "5c557b023230413dfb0756f3137a13e6d726838ccd1430888ad15bfb2b43ea4b"
                 }
             ]
         },
