@@ -54,8 +54,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/PurpleI2P/i2pd/archive/2.27.0.zip",
-                    "sha256": "5eb836afc28c6cbe70f25f2c297f9968a903ef2df79abc2b113080b1c0d58ae7"
+                    "url": "https://github.com/PurpleI2P/i2pd/archive/2.28.0.zip",
+                    "sha256": "4bca96143678e3c60a1a6a5f71fe99c4269b39be2376255f5c73f4b110b2dae5"
                 },
                 {
                     "type": "patch",
