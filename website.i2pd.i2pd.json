@@ -48,7 +48,6 @@
             "name": "i2pd",
             "buildsystem": "qmake",
             "subdir": "qt/i2pd_qt",
-            "make-args": ["USE_UPNP=yes", "DEBUG=no"],
             "config-opts": ["QMAKE_LIBDIR=/app/lib"],
             "no-make-install": true,
             "sources": [
