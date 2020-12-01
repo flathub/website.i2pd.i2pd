@@ -53,8 +53,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/PurpleI2P/i2pd/archive/d02a0c9b3a1b9f2cbee8bf364382443cfa081443.zip",
-                    "sha256": "f2c6246fe6f99e3f61e15fca5b170498e2e93e3b61b950c9b7fe8a59182ffa53"
+                    "url": "https://github.com/PurpleI2P/i2pd/archive/ad84944d20c9dd86058f6bdd6c10ea15d0f62425.zip",
+                    "sha256": "acdf82fb2c0d85668e22841b8677f8ca7476258f24a74808389a52a76f131118"
                 },
                 {
                     "type": "patch",
