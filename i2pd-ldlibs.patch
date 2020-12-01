@@ -4,10 +4,10 @@ index da5f68b4..7fe838a2 100644
 +++ b/Makefile.linux
 @@ -46,7 +46,7 @@ ifeq ($(USE_UPNP),yes)
  endif
-        LDLIBS += -lpthread -ldl
+ 	LDLIBS += -lpthread -ldl
  else
--       LDLIBS += -lcrypto -lssl -lz -lboost_system -lboost_date_time -lboost_filesystem -lboost_program_options -lpthread
-+       LDLIBS += -L/app/lib -lcrypto -lssl -lz -lboost_system -lboost_date_time -lboost_filesystem -lboost_program_options -lpthread
+-	LDLIBS += -lcrypto -lssl -lz -lboost_system -lboost_date_time -lboost_filesystem -lboost_program_options -lpthread
++	LDLIBS += -L/app/lib -lcrypto -lssl -lz -lboost_system -lboost_date_time -lboost_filesystem -lboost_program_options -lpthread
  ifeq ($(USE_UPNP),yes)
-        LDLIBS += -lminiupnpc
+ 	LDLIBS += -lminiupnpc
  endif
