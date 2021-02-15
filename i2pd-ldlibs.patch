@@ -1,7 +1,7 @@
-diff --git a/Makefile.linux b/Makefile.linux
+diff --git a/src/i2pd/Makefile.linux b/src/i2pd/Makefile.linux
 index da5f68b4..7fe838a2 100644
---- a/Makefile.linux
-+++ b/Makefile.linux
+--- a/src/i2pd/Makefile.linux
++++ b/src/i2pd/Makefile.linux
 @@ -46,7 +46,7 @@ ifeq ($(USE_UPNP),yes)
  endif
  	LDLIBS += -lpthread -ldl

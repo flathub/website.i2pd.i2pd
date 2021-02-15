@@ -47,14 +47,13 @@
         {
             "name": "i2pd",
             "buildsystem": "qmake",
-            "subdir": "qt/i2pd_qt",
             "config-opts": ["QMAKE_LIBDIR=/app/lib"],
             "no-make-install": true,
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/PurpleI2P/i2pd/archive/2f57013e02cb105926e6919551b67bfcee751f89.zip",
-                    "sha256": "70bfef99f8d376091f52b1ddfe6676ab4b5229ec6f0353d0f1b5298de6b391b8"
+                    "type": "git",
+                    "url": "https://github.com/PurpleI2P/i2pd-qt.git",
+                    "tag ": "2.36.0"
                 },
                 {
                     "type": "patch",
@@ -67,14 +66,14 @@
             ],
             "post-install": [
                 "install -Dm777 i2pd_qt /app/bin/i2pd_qt",
-                "install -Dm777 ../../i2pd_qt_wrapper /app/bin/i2pd_qt_wrapper",
-                "install -Dm644 ../../contrib/i2pd.conf /app/i2pd/i2pd.conf",
-                "install -Dm644 ../../contrib/tunnels.conf /app/i2pd/tunnels.conf",
-                "cp -r ../../contrib/certificates /app/i2pd/certificates",
-                "install -Dm644 resources/images/icon.png /app/share/icons/hicolor/128x128/apps/website.i2pd.i2pd.png",
-                "install -Dm644 data/website.i2pd.i2pd.appdata.xml /app/share/metainfo/website.i2pd.i2pd.appdata.xml",
+                "install -Dm777 i2pd_qt_wrapper /app/bin/i2pd_qt_wrapper",
+                "install -Dm644 src/i2pd/contrib/i2pd.conf /app/i2pd/i2pd.conf",
+                "install -Dm644 src/i2pd/contrib/tunnels.conf /app/i2pd/tunnels.conf",
+                "cp -r src/i2pd/contrib/certificates /app/i2pd/certificates",
+                "install -Dm644 src/resources/images/icon.png /app/share/icons/hicolor/128x128/apps/website.i2pd.i2pd.png",
+                "install -Dm644 contrib/website.i2pd.i2pd.appdata.xml /app/share/metainfo/website.i2pd.i2pd.appdata.xml",
                 "sed -i 's/Exec=i2pd_qt/Exec=i2pd_qt_wrapper/' data/website.i2pd.i2pd.desktop",
-                "install -Dm644 data/website.i2pd.i2pd.desktop /app/share/applications/website.i2pd.i2pd.desktop"
+                "install -Dm644 contrib/website.i2pd.i2pd.desktop /app/share/applications/website.i2pd.i2pd.desktop"
             ]
         }
     ]
