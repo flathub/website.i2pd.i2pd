@@ -72,7 +72,7 @@
                 "cp -r src/i2pd/contrib/certificates /app/i2pd/certificates",
                 "install -Dm644 src/resources/images/icon.png /app/share/icons/hicolor/128x128/apps/website.i2pd.i2pd.png",
                 "install -Dm644 contrib/website.i2pd.i2pd.appdata.xml /app/share/metainfo/website.i2pd.i2pd.appdata.xml",
-                "sed -i 's/Exec=i2pd_qt/Exec=i2pd_qt_wrapper/' data/website.i2pd.i2pd.desktop",
+                "sed -i 's/Exec=i2pd_qt/Exec=i2pd_qt_wrapper/' contrib/website.i2pd.i2pd.desktop",
                 "install -Dm644 contrib/website.i2pd.i2pd.desktop /app/share/applications/website.i2pd.i2pd.desktop"
             ]
         }
