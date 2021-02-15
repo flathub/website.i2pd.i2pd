@@ -60,6 +60,10 @@
                     "path": "i2pd-ldlibs.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "project.patch"
+                },
+                {
                     "type": "file",
                     "path": "i2pd_qt_wrapper"
                 }
