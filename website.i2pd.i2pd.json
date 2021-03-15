@@ -53,15 +53,11 @@
                 {
                     "type": "git",
                     "url": "https://github.com/PurpleI2P/i2pd-qt.git",
-                    "tag ": "2.36.0"
+                    "tag ": "2.37.0"
                 },
                 {
                     "type": "patch",
                     "path": "i2pd-ldlibs.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "project.patch"
                 },
                 {
                     "type": "file",
