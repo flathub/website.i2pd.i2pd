@@ -1,7 +1,7 @@
 {
     "app-id": "website.i2pd.i2pd",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.14",
+    "runtime-version": "5.15",
     "sdk": "org.kde.Sdk",
     "command": "i2pd_qt_wrapper",
     "finish-args": [
