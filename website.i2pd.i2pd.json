@@ -39,8 +39,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://miniupnp.free.fr/files/miniupnpd-2.3.0.tar.gz",
-                    "sha256": "a76f90ab8e6e0ea8e4676ae6acf69dfe18d15672c56538702240c7cb57f25c06"
+                    "url": "http://miniupnp.free.fr/files/miniupnpc-2.2.3.tar.gz",
+                    "sha256": "1cde5ae30649e8cc81cfc4222eb298bf4eaad5c4ee4afa8aad637d7bb8b7e80e"
                 }
             ]
         },
