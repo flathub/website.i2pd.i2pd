@@ -27,8 +27,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2",
-                    "sha256": "f0397ba6e982c4450f27bf32a2a83292aba035b827a5623a14636ea583318c41"
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2",
+                    "sha256": "8681f175d4bdb26c52222665793eef08490d7758529330f98d3b29dd0735bccc"
                 }
             ]
         },
@@ -39,8 +39,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://miniupnp.free.fr/files/miniupnpc-2.1.tar.gz",
-                    "sha256": "e19fb5e01ea5a707e2a8cb96f537fbd9f3a913d53d804a3265e3aeab3d2064c6"
+                    "url": "http://miniupnp.free.fr/files/miniupnpd-2.3.0.tar.gz",
+                    "sha256": "a76f90ab8e6e0ea8e4676ae6acf69dfe18d15672c56538702240c7cb57f25c06"
                 }
             ]
         },
@@ -53,7 +53,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/PurpleI2P/i2pd-qt.git",
-                    "tag ": "2.41.0"
+                    "tag ": "2.42.1"
                 },
                 {
                     "type": "patch",
