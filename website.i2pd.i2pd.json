@@ -12,9 +12,16 @@
         "--device=dri"
     ],
     "cleanup": [
+        "/bin/upnpc", 
+        "/bin/external-ip",
         "/cache",
-        "/share/doc", "/share/man", "/bin/upnpc", "/bin/external-ip",
-        "*.la", "*.a"
+        "/include",
+        "/lib/cmake",
+        "/lib/pkgconfig",
+        "/share/doc", 
+        "/share/man", 
+        "*.la", 
+        "*.a"
     ],
     "modules": [
         {
