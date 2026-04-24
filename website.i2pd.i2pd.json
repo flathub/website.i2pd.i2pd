@@ -1,7 +1,7 @@
 {
     "app-id": "website.i2pd.i2pd",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-24.08",
+    "runtime-version": "5.15-25.08",
     "sdk": "org.kde.Sdk",
     "command": "i2pd_qt_wrapper",
     "finish-args": [
@@ -12,15 +12,15 @@
         "--device=dri"
     ],
     "cleanup": [
-        "/bin/upnpc", 
+        "/bin/upnpc",
         "/bin/external-ip",
         "/cache",
         "/include",
         "/lib/cmake",
         "/lib/pkgconfig",
-        "/share/doc", 
-        "/share/man", 
-        "*.la", 
+        "/share/doc",
+        "/share/man",
+        "*.la",
         "*.a"
     ],
     "modules": [
@@ -34,20 +34,19 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://archives.boost.io/release/1.83.0/source/boost_1_83_0.tar.bz2",
-                    "sha256": "6478edfe2f3305127cffe8caf73ea0176c53769f4bf1585be237eb30798c3b8e"
+                    "url": "https://archives.boost.io/release/1.91.0/source/boost_1_91_0.tar.bz2",
+                    "sha256": "de5e6b0e4913395c6bdfa90537febd9028ea4c0735d2cdb0cd9b45d5f51264f5"
                 }
             ]
         },
         {
             "name": "miniupnpc",
-            "no-autogen": true,
-            "make-install-args": ["INSTALLPREFIX=/app"],
+            "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://miniupnp.free.fr/files/miniupnpc-2.1.tar.gz",
-                    "sha256": "e19fb5e01ea5a707e2a8cb96f537fbd9f3a913d53d804a3265e3aeab3d2064c6"
+                    "url": "https://miniupnp.tuxfamily.org/files/miniupnpc-2.3.3.tar.gz",
+                    "sha256": "d52a0afa614ad6c088cc9ddff1ae7d29c8c595ac5fdd321170a05f41e634bd1a"
                 }
             ]
         },
@@ -60,7 +59,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/PurpleI2P/i2pd-qt.git",
-                    "tag": "2.59.0"
+                    "tag": "2.59.0",
+                    "commit": "6c46c6b6b84cbed84124f92128bd0a865ac816ca"
                 },
                 {
                     "type": "patch",
@@ -79,7 +79,7 @@
                 "cp -r src/i2pd/contrib/certificates /app/i2pd/certificates",
                 "install -Dm644 src/resources/images/icon.png /app/share/icons/hicolor/128x128/apps/website.i2pd.i2pd.png",
                 "install -Dm644 contrib/website.i2pd.i2pd.appdata.xml /app/share/metainfo/website.i2pd.i2pd.appdata.xml",
-                "sed -i 's/Exec=i2pd_qt/Exec=i2pd_qt_wrapper/' contrib/website.i2pd.i2pd.desktop",
+                "desktop-file-edit --set-key=Exec --set-value=i2pd_qt_wrapper contrib/website.i2pd.i2pd.desktop",
                 "install -Dm644 contrib/website.i2pd.i2pd.desktop /app/share/applications/website.i2pd.i2pd.desktop"
             ]
         }
