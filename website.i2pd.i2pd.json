@@ -9,7 +9,9 @@
         "--socket=wayland",
         "--share=ipc",
         "--share=network",
-        "--device=dri"
+        "--device=dri",
+        "--talk-name=org.kde.StatusNotifierWatcher",
+        "--filesystem=xdg-run/tray-icon:create"        
     ],
     "cleanup": [
         "/bin/upnpc",
