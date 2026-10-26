@@ -30,7 +30,7 @@
             "name": "boost",
             "buildsystem": "simple",
             "build-commands": [
-                "./bootstrap.sh --with-libraries=json,program_options,url",
+                "./bootstrap.sh --with-libraries=program_options",
                 "./b2 -j $FLATPAK_BUILDER_N_JOBS install --prefix=/app"
             ],
             "sources": [
@@ -62,7 +62,7 @@
                     "type": "git",
                     "url": "https://github.com/PurpleI2P/i2pd-qt.git",
                     "tag": "3.0.0",
-                    "commit": "1ba5fc20c8316708a5209c69d5fddfe4207355cd"
+                    "commit": "d8a4bd5548db255965f7b4fbff7f2a0b4dd3f3cd"
                 },
                 {
                     "type": "patch",
