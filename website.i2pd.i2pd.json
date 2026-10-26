@@ -11,7 +11,7 @@
         "--share=network",
         "--device=dri",
         "--talk-name=org.kde.StatusNotifierWatcher",
-        "--filesystem=xdg-run/tray-icon:create"        
+        "--filesystem=xdg-run/tray-icon:create"
     ],
     "cleanup": [
         "/bin/upnpc",
@@ -61,8 +61,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/PurpleI2P/i2pd-qt.git",
-                    "tag": "2.59.0",
-                    "commit": "6c46c6b6b84cbed84124f92128bd0a865ac816ca"
+                    "tag": "3.0.0",
+                    "commit": "d8a4bd5548db255965f7b4fbff7f2a0b4dd3f3cd"
                 },
                 {
                     "type": "patch",
