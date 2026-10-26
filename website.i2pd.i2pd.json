@@ -61,8 +61,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/PurpleI2P/i2pd-qt.git",
-                    "tag": "2.59.0",
-                    "commit": "6c46c6b6b84cbed84124f92128bd0a865ac816ca"
+                    "tag": "3.0.0",
+                    "commit": "1ba5fc20c8316708a5209c69d5fddfe4207355cd"
                 },
                 {
                     "type": "patch",
