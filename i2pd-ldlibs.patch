@@ -7,7 +7,7 @@ index 4ea39e22..3469310b 100644
  	LDLIBS += -lpthread -ldl
  else
 -	LDLIBS += -lssl -lcrypto -lz -lboost_program_options -lpthread -latomic
-+	LDLIBS += -L/app/lib -lssl -lcrypto -lz -lboost_program_options -lpthread -latomic
++	LDLIBS += -L/app/lib -lssl -lcrypto -lz -lboost_program_options -lboost_json -lboost_url -lpthread -latomic
  ifeq ($(USE_UPNP),yes)
  	LDLIBS += -lminiupnpc
  endif
