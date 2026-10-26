@@ -11,7 +11,7 @@
         "--share=network",
         "--device=dri",
         "--talk-name=org.kde.StatusNotifierWatcher",
-        "--filesystem=xdg-run/tray-icon:create"        
+        "--filesystem=xdg-run/tray-icon:create"
     ],
     "cleanup": [
         "/bin/upnpc",
@@ -30,7 +30,7 @@
             "name": "boost",
             "buildsystem": "simple",
             "build-commands": [
-                "./bootstrap.sh --with-libraries=program_options",
+                "./bootstrap.sh --with-libraries=json,program_options,url",
                 "./b2 -j $FLATPAK_BUILDER_N_JOBS install --prefix=/app"
             ],
             "sources": [
