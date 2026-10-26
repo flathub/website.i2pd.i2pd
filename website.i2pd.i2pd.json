@@ -30,7 +30,7 @@
             "name": "boost",
             "buildsystem": "simple",
             "build-commands": [
-                "./bootstrap.sh --with-libraries=program_options",
+                "./bootstrap.sh --with-libraries=program_options,json,url",
                 "./b2 -j $FLATPAK_BUILDER_N_JOBS install --prefix=/app"
             ],
             "sources": [
